@@ -1,0 +1,154 @@
+
+/* css de pagina feed  publicacion*/
+
+.post-list{
+  display: flexbox;
+  min-height: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+
+
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 200px;
+  max-width: 360px;
+  margin: auto;
+}
+.post1{
+  background-color: aliceblue;
+  border: 3px double black;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  padding-top:10px;
+}
+
+
+.post-img{
+  background: #6384dd;
+  width: 90%;
+  margin: 0 auto;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s;
+}
+.post{
+  box-shadow: 0 1px 6px  1px rgb(0, 0, 0, .1);
+  overflow: hidden;
+  transition: .2s;
+}
+
+.post:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 1px 14px  2px rgb(0, 0, 0, .15);
+
+}
+
+.post-header{
+  /* width: 20%;
+  height: 215px; */
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.post:hover .post-img{
+
+  transform: scale(1,1);
+  
+}
+
+.post-body{
+  padding: 15px;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.post-body span{
+  display: inline-block;
+  color: rgb(9, 114, 206);
+  margin-bottom: 15px;
+  
+}
+.post-body p{
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.info-menu li{
+  width: 20px;
+  display: inline-flex;
+  padding-left: 3px;
+  list-style: none;
+  color: #000;
+  margin: 0 0 5px 2px;
+}
+
+.info-menu li a{
+  width: 40px;
+  display: inline-flex;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+ul , li {
+  list-style: none;
+}
+ 
+.info-menu li a {
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  padding: 2px 3px;
+  display: block;
+}
+
+.info-menu li a:hover{
+  height: 30px;
+  width: 100px;
+  margin:0px 0px 0px 0px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+
+.info-menu > li{
+  float: left;
+
+}
+
+
+.info-menu li ul{
+display: none;
+position: absolute;
+
+}
+
+.info-menu li:hover > ul {
+  display: block;
+}
+
+.info-menu li ul li{
+  position: relative;
+    height: 50px;
+    width: 500px;
+    margin:2px 5px 5px 2px;
+  }
+
+.img-user {
+  
+  width: 50px;
+  height: 50px;
+  background-color: rgb(135, 190, 235);
+  background-size: cover;
+  background-position: center;
+  border-radius: 60px;
+  margin: 5px 5px 5px 10px;
+
+}

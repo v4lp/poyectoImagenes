@@ -1,0 +1,110 @@
+/* fondo pantalla */
+.found{
+    background: #BE93C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+/* css de pagina feed  menu*/
+
+.body-feed{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #header {
+    margin: auto;
+    width: 1500px;
+    font-family:  'Playfair Display', monospace;
+  }
+  
+  ul , li {
+    list-style: none;
+  }
+  
+.nav{
+    margin: 10px 9vw
+}
+
+  .nav li a {
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    padding: 20px 35px;
+    display: block;
+  }
+  
+  .nav li a:hover{
+    background-color: black;
+    color: whitesmoke;
+  }
+  
+  .nav > li{
+    float: left;
+  
+  }
+  
+  /* sub menu */
+  .nav li ul{
+  display: none;
+  position: absolute;
+  
+  }
+  
+  .nav li:hover > ul {
+    display: block;
+  }
+  
+  .nav li ul li{
+    position: relative;
+    margin: 1px auto;
+    right: -1px;
+    display: block;
+    }
+  
+
+/*    css de el formulario crear  */
+main{
+    margin: 20px auto;
+}
+
+.containerP{
+    background-color: aliceblue;
+    display: inline-block;
+    position: relative;
+    width: 940px;
+    margin: 120px 15vw;
+    align-items: center;
+    text-align: center;
+    border: double;
+    padding: 10px 40px;
+}
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+form input , form textarea {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    width: 25%;
+    transition: .4s;
+    border-radius: 10px;
+    font-size: 19px;
+    
+}
+
+input:hover , textarea:hover , button:hover{
+    background-color: rgba(153, 151, 151, 0.609);
+    color: rgb(255, 255, 255);
+}
+
+button{
+    margin: 20px auto;
+    padding: 10px 10px;
+    transition: .4s;
+    border-radius: 10px;
+}
