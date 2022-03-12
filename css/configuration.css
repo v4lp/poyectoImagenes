@@ -6,68 +6,10 @@
     
 }
 
-/* css de pagina feed  menu*/
-
-.body-feed{
-    padding: 0;
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  #header {
-    margin: auto;
-    width: 1500px;
-    font-family:  'Playfair Display', monospace;
-  }
-  
-  ul , li {
-    list-style: none;
-  }
-  
-.nav{
-    margin: 10px 9vw
-}
-
-  .nav li a {
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-    padding: 20px 35px;
-    display: block;
-  }
-  
-  .nav li a:hover{
-    background-color: black;
-    color: whitesmoke;
-  }
-  
-  .nav > li{
-    float: left;
-  
-  }
-  
-  /* sub menu */
-  .nav li ul{
-  display: none;
-  position: absolute;
-  
-  }
-  
-  .nav li:hover > ul {
-    display: block;
-  }
-  
-  .nav li ul li{
-    position: relative;
-    margin: 1px auto;
-    right: -1px;
-    display: block;
-    }
-  
-
 /*    css de el formulario crear  */
 main{
     margin: 20px auto;
+    z-index: 2;
 }
 
 .containerP{
@@ -108,3 +50,26 @@ button{
     transition: .4s;
     border-radius: 10px;
 }
+@media screen and (max-width:1200px) {
+    main{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    .containerP{
+
+        width: 90%;
+        margin: 1vh 1vw;
+        align-items: center;
+        text-align: center;
+        padding:0;
+    }
+    
+
+form input, form textarea {
+
+    width: 43%;
+    border-radius: 1px;
+    font-size: 15px;
+}
+  }

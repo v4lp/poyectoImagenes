@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="..\css\fondo.css">
     <link rel="stylesheet" href="..\css\menu.css">
     <link rel="stylesheet" href="..\css\publicationfeed.css">
     <script src="https://kit.fontawesome.com/42664e8c9a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="..\css\bootstrap.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../static/menu.js"></script>
     <title>Inicio</title>
 </head>
 <body class="body-feed  found">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div  id="header">
-        <ul class="nav ">
-            <li><a href="feed.html">Inicio <i class="fas fa-home"></i></a></li>
-            <li><a href="userconfiguration.html">Configuración <i class="fas fa-users-cog"></i></a></li>
-            <li><a href="profile.html">Perfil <i class="fas fa-user"></i></a></li>
-            <li><a href="publication.html">Publicación <i class="far fa-plus-square"></i></a></li>
-            <li><a href="http://">Mensaje <i class="far fa-comments"></i></a></li>
-            <li><a href="#">Buscar <i class="fas fa-search"></i></a>
-                <ul>
+<header>
+    <div  class="menu_bar">
+        <a href="#" class="btn_menu"> <span class="fas fa-ellipsis-v"></span> Menu</a>
+    </div>
+    <nav>
+        <ul class="nav">
+            <li><a href="feed.html">Inicio <span class="fas fa-home"></span></a></li>
+            <li><a href="userconfiguration.html">Configuración <span class="fas fa-users-cog"></span></a></li>
+            <li><a href="profile.html">Perfil <span class="fas fa-user"></span></a></li>
+            <li><a href="publication.html">Publicación <span class="far fa-plus-square"></span></a></li>
+            <li><a href="#">Mensaje <span class="far fa-comments"></span></a></li>
+            <li><a href="#">Buscar <span class="fas fa-search"></span></a>
+                <ul class="sub_menu">
                     <li><a href="searchperson.html">Usuario</a></li>
                     <li><a href="searchpublication.html">Publicación</a></li>
                 </ul>
             </li>
-            <li><a href="http://">Cerrar sesión  <i class="fas fa-power-off"></i></a></i></li>
+            <li><a href="#">Cerrar sesión  <span class="fas fa-power-off"></span></a></span></li>
         </ul>
-    </div>
+    </nav>
+</header >
         <br>
         <br>
         <br>

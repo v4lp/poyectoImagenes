@@ -1,56 +1,111 @@
 /* css de pagina feed  menu*/
+header{
+   margin: 0;
+   padding: 0%;
+   width: 100%;
+}
+header nav{
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: aliceblue;
+  height: 10%;
+}
 
-.body-feed{
-    padding: 0;
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  #header {
-    margin: auto;
-    width: 1500px;
-    font-family:  'Playfair Display', monospace;
-  }
-  
-  .nav ul , li {
-    list-style: none;
-  }
-  
-  .nav li a {
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-    padding: 20px 35px;
-    display: block;
-  }
-  
-  .nav li a:hover{
-    background-color: black;
-    color: whitesmoke;
-  }
-  
-  .nav > li{
-    float: left;
-  
-  }
-  
-  
-  .nav li ul{
+.menu_bar{
   display: none;
+  list-style: none;
+}
+header nav ul  {
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  color: rgb(85, 85, 85);
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+  /* width: 20px; */
+  transition: 1s;
+}
+header nav ul li:hover {
+ background-color: rgba(206, 206, 206, 0.644);
+}
+header nav ul li a:hover {
+ color: rgb(3, 3, 3);
+}
+
+header nav ul li span{
+  margin-right: 10px;
+}
+.sub_menu{
   position: absolute;
-  
+  display: none;
+  background: rgba(3, 3, 3, 0);
+  align-items: center;
+}
+.sub_menu li{
+  display:  inline-block;
+  width: 110%;
+  background: rgb(255, 253, 253);
+  text-align: center;
+  margin: 1px auto;
+ 
+}
+.sub_menu li a {
+ display: inline-block;
+ 
+}
+
+.nav li:hover .sub_menu{
+  display: block;
+}
+
+@media screen and (max-width:1200px) {
+  header nav{
+    width: 70%;
+    height: 90%;
+    left: -100%;
+    position: fixed;
+    margin: auto 1px ;
+    padding: 0;
+    z-index: 1;
   }
-  
-  .nav li:hover > ul {
+  header nav ul{
+    padding: 0;
+  }
+  header nav ul li { 
     display: block;
+    float: none;
+    border-bottom:1px solid rgba(255, 255, 255, 0.657) ;
   }
-  
-  .nav li ul li{
-    position: relative;
-    }
-  
-  .nav li ul li ul {
-    right: -140px;
-    top: 0;
-  
-    }
+  .menu_bar{
+    display: block;
+    width: 100%;
+    background: rgb(0, 0, 0);
+  }
+  .menu_bar span {
+    float: right;
+    font-size:40px ;
+  }
+  .menu_bar .btn_menu{
+    display: block;
+    padding: 20px;
+    background: rgb(172, 174, 177);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: black;
+    
+  }
+  .perfil-usuario {
+    margin-top: 30rem;
+}
+}
