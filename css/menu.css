@@ -8,7 +8,8 @@ header nav{
   width: 90%;
   max-width: 1000px;
   margin: 50px auto;
-  background-color: aliceblue;
+  background-color: #cff4fc;
+  color: #055160;
   height: 10%;
 }
 
@@ -25,7 +26,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: rgb(85, 85, 85);
+  color: #055160;
   padding: 20px;
   text-decoration: none;
   display: inline-block;
@@ -33,7 +34,7 @@ header nav ul li a {
   transition: 1s;
 }
 header nav ul li:hover {
- background-color: rgba(206, 206, 206, 0.644);
+ background-color: rgba(54, 54, 54, 0.362);
 }
 header nav ul li a:hover {
  color: rgb(3, 3, 3);
@@ -74,19 +75,24 @@ header nav ul li span{
     margin: auto 1px ;
     padding: 0;
     z-index: 1;
+    background-color:rgba(0, 0, 0, 0.099) ;
   }
   header nav ul{
     padding: 0;
+    display: block;
+    background: white;
   }
   header nav ul li { 
     display: block;
+    width: 100%;
+    text-align: center;
     float: none;
     border-bottom:1px solid rgba(255, 255, 255, 0.657) ;
   }
   .menu_bar{
     display: block;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.099);
   }
   .menu_bar span {
     float: right;
@@ -95,7 +101,6 @@ header nav ul li span{
   .menu_bar .btn_menu{
     display: block;
     padding: 20px;
-    background: rgb(172, 174, 177);
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
@@ -105,7 +110,8 @@ header nav ul li span{
     color: black;
     
   }
+
   .perfil-usuario {
     margin-top: 30rem;
-}
+  }
 }

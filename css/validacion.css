@@ -1,0 +1,23 @@
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-container--invalid .input {
+    border: 1px solid rgb(250, 40, 75);
+    border-radius: 7px;
+  }
+  
+  .input-container--invalid .input-label {
+    color: rgb(250, 40, 75);
+  }
+  
+  .input-message-error {
+    display: none;
+  }
+  
+  .input-container--invalid .input-message-error {
+    color: rgb(250, 40, 75);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }

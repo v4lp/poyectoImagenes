@@ -2,61 +2,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">s
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <script src="..\js\bootstrap.js"></script>   
     <link rel="stylesheet" href="..\css\bootstrap.css">
     <link rel="stylesheet" href="..\css\fondo.css">
+    <link rel="stylesheet" href="..\css\validacion.css">
 </head>
 <body  class="found">
     
-   <div>
+   <main>
         <h1 class=" mt-5 container list-group-item list-group-item-info text-center"  >Registrarse</h1>
         <form action="" method="post">
             <div class=" container list-group-item list-group-item-info text-center" >
-                <div class="txt-centetr">
-                    <label for="">Nombre</label>
+                <div class="txt-centetr input-container">
+                    <label class="input-label " for="">Nombre</label>
                     <br>
-                    <input type="text" name="name" id="name" required>
+                    <input class="input" type="text" name="name" id="name" required data-tipo="nombre">
+                    <samp class="input-message-error"></samp>
                 </div>
                 <br>
-                <div>
-                    <label for="">Apellido</label>
+                <div class="input-container">
+                    <label class="input-label " for="">Apellido</label>
                     <br>
-                    <input type="text" name="Lname" id="Lname" required>
+                    <input class="input" type="text" name="Lname" id="Lname" required data-tipo="nombre">
+                    <samp class="input-message-error"></samp>
                 </div>
                 <br>
-                <div>
-                    <label for="">Nombre de Usuario</label>
+                <div class="input-container">
+                    <label class="input-label " for="">Nombre de Usuario</label>
                     <br>
-                    <input type="text" name="nameUser" id="nameUser" required >
+                    <input class="input" type="text" name="nameUser" id="nameUser" required data-tipo="nombre">
+                    <samp class="input-message-error"></samp>
                 </div>
                 <br>
-                <div>
-                    <label for="">Correo</label>
+                <div class="input-container">
+                    <label class="input-label " for="">Correo</label>
                     <br>
-                    <input type="email" name="email" id="email" required  placeholder="nombre@dominio.com">
+                    <input class="input" type="email" name="email" id="email" required  placeholder="nombre@dominio.com" data-tipo="email">
+                    <samp class="input-message-error"></samp>
                 </div>
                 <br>
-                <div>
-                    <label for="">Contraseña</label>
+                <div class="input-container">
+                    <label class="input-label " for="">Contraseña</label>
                     <br>
-                    <input type="password" name="password" id="password" required>
+                    <input class="input" type="password" name="password" id="password" required  data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[ !@#$%^&*_=+-]).{8,12}$" title="Almenos 8 caracteres,Maximo 12 caracteres,una letra Mayuscula, una letra minuscula, un numero y contener caracteres especiales como ! @ # $ % ^ & * _ = + -  "> 
+                    <samp class="input-message-error"></samp>
                 </div>
                 <br>
-                <div>
-                    <label for="">Repetir la Contraseña</label>
+                <div class="input-container">
+                    <label class="input-label " for="">Repetir la Contraseña</label>
                     <br>
-                    <input type="password" name="Rpassword" id="Rpassword" required>
+                    <input class="input"  type="password" name="Rpassword" id="Rpassword" required data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[ !@#$%^&*_=+-]).{8,12}$" title="Almenos 8 caracteres,Maximo 12 caracteres,una letra Mayuscula, una letra minuscula, un numero y contener caracteres especiales como ! @ # $ % ^ & * _ = + -  "> 
+                    <samp class="input-message-error"></samp>
                 </div>
                 <br>
-                <input type="submit" value="Registrarse" class="btn btn-outline-info" required>
+                <input class="input" type="submit" value="Registrarse" class="btn btn-outline-info" required>
             </div>
         </form>
   
-   </div>
-    
+   </main>
+    <script src="../static/validacion.js"></script>
 </body>
 </html>
