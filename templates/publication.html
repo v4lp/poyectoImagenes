@@ -39,11 +39,14 @@
             <div class="containerP">
                 <h2> Crear Publicación</h2>
     
-                    <label for="titulo">Titulo</label>
+                    <label class="texto-input" for="titulo">Titulo</label>
                     <input type="text" id="titulo">
-                    <label for="img">Imagen</label>
-                    <input type="file" name="" id="img">
-                    <label for="description">Descripción</label>
+                    <div class="container-file">
+                        <label class="container-file-texto"  for="img">Imagen</label>
+                        <input type="file" name="" id="img">
+                    </div>
+                   
+                    <label class="texto-input" for="description">Descripción</label>
                     <textarea name="" id="description" cols="70" rows="10"></textarea>
                     <label for="date">Fecha de Publicación</label>
                     <p id="date"></p>

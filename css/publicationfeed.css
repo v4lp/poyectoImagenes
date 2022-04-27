@@ -1,4 +1,4 @@
-
+@import url(variables.css);
 /* css de pagina feed  publicacion*/
 
 .post-list{
@@ -20,7 +20,7 @@
 }
 .post1{
   background-color: #fcfcfc59;
-  border: 3px double #00000091;
+  border: 3px double var(--border-gris);
   border-radius: 10px;
   align-items: center;
   text-align: center;

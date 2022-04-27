@@ -19,6 +19,7 @@ header nav{
 }
 header nav ul  {
   overflow: hidden;
+  list-style: none;
 }
 
 header nav ul li {

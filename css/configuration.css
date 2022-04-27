@@ -1,3 +1,4 @@
+@import url(variables.css);
 /* fondo pantalla */
 .found{
     background: #BE93C5;  /* fallback for old browsers */
@@ -13,28 +14,28 @@ main{
 }
 
 .containerP{
+    align-items: center;
     background-color: aliceblue;
     display: inline-block;
     position: relative;
     width: 940px;
     margin: 120px 15vw;
-    align-items: center;
     text-align: center;
     border: double;
     padding: 10px 40px;
 }
-form label{
+.texto-input {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
-form input , form textarea {
+.containerP input , .containerP textarea {
+    border-radius: 10px;
     display: block;
     margin: 20px auto;
     padding: 10px 10px;
     width: 25%;
     transition: .4s;
-    border-radius: 10px;
     font-size: 19px;
     
 }
@@ -50,42 +51,20 @@ button{
     transition: .4s;
     border-radius: 10px;
 }
-@media screen and (max-width:1200px) {
-    main{
-        width: 90%;
-        height: 90%;
-        margin: auto;
-    }
-    .containerP{
 
-        width: 90%;
-        margin: 1vh 1vw;
-        align-items: center;
-        text-align: center;
-        padding:0;
-    }
-    
-
-form input, form textarea {
-
-    width: 43%;
-    border-radius: 1px;
-    font-size: 15px;
-}
-  }
 
 /* user configuration */
 
 .container-file{
     position: relative;
     background-color:#f8f5f5 ;
-    width: 33%;
-    height: 30px;
+    width: 30%;
+    height: 50px;
     border-radius: 5px;
     text-align: center;
     margin: 20px auto;
     border: 1px double black;
-    font-size: 20px;
+    font-size: 2rem;
     transition: 0.5s all;
 }
 .container-file-texto :hover{
@@ -94,7 +73,7 @@ form input, form textarea {
 
 }
 .container-file-texto{
-    font-size: 15px;
+    font-size: 1.5rem;
     margin: 5px 1px;
     height: calc(100% - 10px);
     text-align: center;
@@ -111,3 +90,44 @@ form input, form textarea {
     opacity: 0%;
     display: none;
 }
+
+@media screen and (max-width:1200px) {
+    main{
+        width: 90%;
+    }
+    .containerP{
+
+        width: 90%;
+        margin: 1vh 1vw;
+        align-items: center;
+        text-align: center;
+        padding:0;
+    }
+    
+
+    form input, form textarea {
+
+        width: 43%;
+        border-radius: 1px;
+        font-size: 15px;
+    }
+
+    .container-file{
+        width: 56%;
+    }
+    .containerP input , .containerP textarea {
+        width: 55%;
+    }
+  }
+@media screen and (max-width:425px) {
+
+    .container-file{
+        width: 63%;
+    }
+    .container-file-texto{
+        font-size: 0.9rem;
+        display: inline-block;
+        bottom:25%;
+         
+    }
+  }

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/42664e8c9a.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../static/menu.js"></script>
-    <title>Crear Publicacion</title>
+    <title>Configurar Usuario</title>
 </head>
 <body class="found">
     <header>
@@ -35,19 +35,20 @@
         </nav>
     </header >
     <main>
-        <form action="" method="get">
+        
             <div class="containerP">
-                <h2> Editar Datos De Usuario</h2>
+                <form action="" method="get"></form>
+                    <h2> Editar Datos De Usuario</h2>
     
-                    <label for="NombreUser">Nombre de Usuario</label>
+                    <label class="texto-input"  for="NombreUser">Nombre de Usuario</label>
                     <input type="text" id="NombreUser">
 
-                    <label for="Pasword">Contraseña</label>
+                    <label class="texto-input"  for="Pasword">Contraseña</label>
                     <input type="password" id="Pasword">
-                    <label for="RPasword">Repetir Contraseña</label>
+                    <label class="texto-input"  for="RPasword">Repetir Contraseña</label>
                     <input type="password" id="RPasword">
                    
-                    <label for="description">Descripción Usuario</label>
+                    <label class="texto-input" for="description">Descripción Usuario</label>
                     <textarea name="" id="description" cols="70" rows="10"></textarea>
                     
                     <div class="container-file">
@@ -62,8 +63,9 @@
 
                 
                 <button type="submit" value="Editar Datos">Editar Datos</button>
+            </form>
             </div>
-        </form>
+        
         
     </main>
 </body>

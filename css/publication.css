@@ -151,6 +151,16 @@
       width:auto;
     }
   
+    @media screen and (max-width:676px){
+        .post-list {
+          width: calc(50% - 30px);
+        }
+    }
+    @media screen and (max-width:455px){
+        .post-list {
+          width: calc(100% - 20px);
+        }
+    }
 
   
   

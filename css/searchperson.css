@@ -1,16 +1,19 @@
 .buscar{
-    display:inline-block;
+    display: inline-block;
+    text-align: center;
     margin: 5vh 5vw;
+    width: calc(100% - 10vw);
 }
 .buscar input{
-    width: 950px;
-    height: 30px;
     border-radius: 5px;
-    padding: 1px;
     font-size: x-large;
+    height: 30px;
+    padding: 1px;
+    width: calc(100% - 25% - 1px);
 }
 .buscar button{
-    
+    width: calc(20% - 10px );
+    margin-left: 5px;
     height: 35px;
     border-radius: 5px;
     padding: 5px;
@@ -20,11 +23,16 @@
     |    PUBLICACION PERSON      |
     |____________________________| */
 
+.content-publiperson{
+    margin: 10px auto;
+    width: 100%;
+
+}
 .publiperson{
-    display: inline-block;
-    width: 30%;
+    display: inline-table;
+    width: calc(33% - 38px);
     margin: 25px 15px;
-    height: 9%;
+    max-height: 440px;
     border: 3px double whitesmoke;
     border-radius: 10px;
     background-color: #be93c54f;
@@ -33,10 +41,12 @@
 .publiperson:hover{
     transform: translateY(-4px);
     box-shadow: 0 1px 14px  2px rgb(0, 0, 0, .15);
-    background-color: #6b98cc4f;
-
-  
+    background-color: #c2bebe4f;
   }
+
+.container-user{
+    width: 100%;
+}
 
 .imgerson{
     width: 70px;
@@ -49,24 +59,24 @@
 }
 .nameuser{
     width: 110px;
-    height: 50px;
+    height: 40px;
     display: inline-block;
-    vertical-align: top;
     text-align: center;
     padding: 2px;
     
 }
 
 .publiperson button{
+    color: aliceblue;
     font-size: 15px;
     border: 1px double rgba(0, 0, 0, 0.671);
-    background: rgba(137, 43, 226, 0.472);
+    background: #76767659;
     transition: 0.5s;
     border-radius: 10px;
 
 }
 .publiperson button:hover{
-    background-color: rgba(137, 43, 226, 0.185);
+    background-color: #76767649;
     font-size: 17px;
 
 }
@@ -76,34 +86,53 @@
     margin: 10px;
 }
 
-
+.description{
+    margin: auto 10px;
+    width: calc(100% - 20px);
+    height: 160px;
+    display: block;
+}
 
 @media screen and (max-width:1200px) {
     .buscar{
-        width: 100%;
+        margin: 5vh 5vw;
+        width: calc(100% - 10vw);
         height: 30%;
         padding: 0px;
         justify-content: center;
         align-items: center;
-        margin:  auto  1vh;
-  
     }
-    .buscar input  {
-        width: 90%;
-        padding: 0px;
-        align-self: center;
-        text-align: center;
-        margin:   auto 1vh ;
-  
+
+    .description{
+        height: 140px;
     }
-    .buscar  button {
-        width: 50%;
-        height: 10%;
-        padding: 0px;
-        align-self: center;
-        align-items: center;
-        margin:  1vh 25% ;
-  
+    
+  }
+
+@media screen and (min-width:740px) {
+    .description{
+        height: 170px;
+    }
+    
+  }
+
+@media screen and (max-width:640px) {
+    .buscar input {
+        width:calc(100% - 1px) ;
+    }
+    .buscar button {
+        width:calc(50% - 1px) ;
+        margin-top: 1%;
+    }
+    .publiperson {
+        width: calc(50% - 38px);
+        margin: 10px 15px;
+    }
+    
+  }
+@media screen and (max-width:440px) {
+    .publiperson {
+        width: calc(100% - 30px);
     }
     
   }
